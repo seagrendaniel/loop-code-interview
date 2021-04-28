@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:11-alpine
+    restart: always
+    environment:
+      - POSTGRES_PASSWORD=Abcd1234
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=loop_interview_db
+    ports:
+      - 5432:5432
+
+  neo4j:
+    image: neo4j:4.0
+    environment:
+      NEO4J_AUTH: neo4j/password
+      NEO4J_USER: neo4j
+      NEO4J_PASSWORD: password
+      NEO4J_CREDS: neo4j:password
+      NEO4J_apoc_export_file_enabled: "true"
+      NEO4J_apoc_import_file_enabled: "true"
+      NEO4J_apoc_import_file_use__neo4j__config: "true"
+      NEO4JLABS_PLUGINS: \[\"apoc\"\]
+    ports:
+      - 7474:7474
+      - 7687:7687
+    volumes:
+      - ./dbs/neo4j/data:/data
+      - ./dbs/neo4j/plugins:/plugins
+      - ./dbs/neo4j/import:/import
+    cpus: 0.75
+    restart: always
+
+  server:
+    build:
+      context: ./server
+      args:
+       - EXPOSE_PORT=8080
+    ports:
+      - 8080:8080
+    volumes:
+     - ./server/:/usr/src/app/
+    restart: always
+    depends_on:
+      - neo4j

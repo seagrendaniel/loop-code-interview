@@ -1,0 +1,14 @@
+{
+  "name": "etl_and_client_code_test",
+  "version": "1.0.0",
+  "description": "README.md",
+  "main": "server.js",
+  "dependencies": {
+    "neo4j-driver": "^4.2.3"
+  },
+  "scripts": {
+    "start": "node ./server/server.js"
+  },
+  "author": "engineering@evloop.io",
+  "license": "UNLICENSED"
+}
