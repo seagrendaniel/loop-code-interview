@@ -34,8 +34,8 @@ CREATE TABLE public."vehicle" (
   vin character varying(21) NOT NULL
 );
 
-INSERT INTO public."vehicle" (id, user_id, vin ) VALUES ( 1, 1, '10010-00101-00110' )
-INSERT INTO public."vehicle" (id, user_id, vin ) VALUES ( 2, 5, '10010-00101-00120' )
-INSERT INTO public."vehicle" (id, user_id, vin ) VALUES ( 3, 2, '10010-00101-00130' )
-INSERT INTO public."vehicle" (id, user_id, vin ) VALUES ( 4, 3, '10010-00101-00140' )
-INSERT INTO public."vehicle" (id, user_id, vin ) VALUES ( 5, 4, '10010-00101-00150' )
+INSERT INTO public."vehicle" (id, user_id, vin ) VALUES ( 1, 1, '10010-00101-00110' );
+INSERT INTO public."vehicle" (id, user_id, vin ) VALUES ( 2, 5, '10010-00101-00120' );
+INSERT INTO public."vehicle" (id, user_id, vin ) VALUES ( 3, 2, '10010-00101-00130' );
+INSERT INTO public."vehicle" (id, user_id, vin ) VALUES ( 4, 3, '10010-00101-00140' );
+INSERT INTO public."vehicle" (id, user_id, vin ) VALUES ( 5, 4, '10010-00101-00150' );
