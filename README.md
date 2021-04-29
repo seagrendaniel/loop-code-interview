@@ -1,23 +1,25 @@
 # Loop Mid Interview Test - ETL and Display
 
 ### DB & ETL portion
-- First start up postgres in a docker container
-- Write a script (language of your choosing ) to import the SQL into the db
+- First start up postgres docker container
+- Write a script (language of your choosing ) to import the SQL into the postgres db
   > [Hint] To execute a command in the container use `docker exec {dockerContainerId}`
-- Write a script to export to a CSV from the database too `.scripts/neo4j/import`
+- Write a script to export to a CSV from the postgres database too `.scripts/neo4j/import`
   > [Hint] Don't miss, this folder is mounted into Neo4j when it loads up
-- Start Neo4j
+- Start Neo4j docker container
 - Transform data and Load into Neo4j with relationships.
   > [Hint] This can be done in a single transaction
 
-  When you're done it should look _something_ like:<br/>
-  `MATCH (User:u)-[:owns]->(Vehicle:v) return u, v`<br/>
-  OR: `MATCH (n) return n`<br/>
-
-  The following is a visualization with the neo4j browser, not your expected UI:
-  </br>
+  When you're done it should look _something_ like:
+  <span style="font-size:10px">_The following is a visualization with the neo4j browser, not your expected UI:_</span></br>
   
-  <img src="./Neo4J.png" width=200 height=350 />
+  <img src="./Neo4J.png" width=220 height=350 />
+  <br/>
+  
+  ```
+    MATCH (User:u)-[:owns]->(Vehicle:v) return u, v
+  ```
+  <br/>
 
 ### Server Portion
 - Start Server
