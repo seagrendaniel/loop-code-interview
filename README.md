@@ -12,6 +12,11 @@
 
   When you're done it should look _something_ like:
   `MATCH (User:u)-[:owns]->(Vehicle:v) return u, v`
+  OR: `MATCH (n) return n`
+  > The following is a visualization with the neo4j browser, not your expected UI
+  </br>
+  
+  <img src="./Neo4J.png" width=200 height=350 />
 
 ### Server Portion
 - Start Server
