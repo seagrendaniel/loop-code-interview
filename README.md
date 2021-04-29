@@ -21,3 +21,18 @@
 ### Client Portion
 - Build client of your choosing to display the data. Something simple that lists users, and their vehicles
 - Using frameworks is permitted here but not required ( I mean VanillaJS, no jQuery will be accepted )
+
+
+#### **Docker Cheat Sheet**
+```bash
+$ docker-compose up -d {service}         # The -d will run it in the background,
+                                         # so it does not close when you attempt
+                                         # to exit back to the terminal
+
+$ docker-compose stop {service}          # Stops the service
+$ docker-compose rm {service}            # Removes the service's associated container
+$ docker-compose logs -f {service}       # The -f will follow
+$ docker-compose ps                      # Lists the services
+$ docker ps                              # Lists the containers
+$ docker exec -i {containerId} {command} # Runs command in conatiner
+```      
