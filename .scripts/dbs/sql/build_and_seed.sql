@@ -22,10 +22,10 @@ CREATE TABLE public."user" (
   email character varying(100)
 );
 
-INSERT INTO public."user" (id, first_name, last_name, email) VALUES (1, 'Thomas','Sullivan','thomas.sullivan75@gmail.com');
+INSERT INTO public."user" (id, first_name, last_name, email) VALUES (1, 'Thomas','Sullivan','thomas.sullivan@gmail.com');
 INSERT INTO public."user" (id, first_name, last_name, email) VALUES (2, 'Sun','Sky','sun.sky@gmail.com');
 INSERT INTO public."user" (id, first_name, last_name, email) VALUES (3, 'Abc','Def','abc.def@gmail.com');
-INSERT INTO public."user" (id, first_name, last_name, email) VALUES (4, 'Lmao','Lmbao','lmao.lmbao@gmail.com');
+INSERT INTO public."user" (id, first_name, last_name, email) VALUES (4, 'Lao','Mao','lao.mao@gmail.com');
 INSERT INTO public."user" (id, first_name, last_name, email) VALUES (5, 'George','Hanity','mrhanitygeorge@gmail.com');
 
 CREATE TABLE public."vehicle" (
