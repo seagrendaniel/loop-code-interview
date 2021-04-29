@@ -8,12 +8,13 @@
   > [Hint] Don't miss, this folder is mounted into Neo4j when it loads up
 - Start Neo4j
 - Transform data and Load into Neo4j with relationships.
-  This will be where you spend most of your time writing cypher query.
+  > [Hint] This can be done in a single transaction
 
-  When you're done it should look _something_ like:
-  `MATCH (User:u)-[:owns]->(Vehicle:v) return u, v`
-  OR: `MATCH (n) return n`
-  > The following is a visualization with the neo4j browser, not your expected UI
+  When you're done it should look _something_ like:<br/>
+  `MATCH (User:u)-[:owns]->(Vehicle:v) return u, v`<br/>
+  OR: `MATCH (n) return n`<br/>
+
+  The following is a visualization with the neo4j browser, not your expected UI:
   </br>
   
   <img src="./Neo4J.png" width=200 height=350 />
