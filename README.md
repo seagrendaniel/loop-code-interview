@@ -26,7 +26,7 @@
 
 ### Client Portion
 - Build client of your choosing to display the data. Something simple that lists users, and their vehicles
-- Using frameworks is permitted here but not required ( I mean VanillaJS, no jQuery will be accepted )
+- Using frameworks is permitted here but not required. Either VanillaJS or a Framework, no jQuery or libaries will be accepted.
 
 
 #### **Docker Cheat Sheet**
