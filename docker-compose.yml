@@ -10,6 +10,8 @@ services:
       - POSTGRES_DB=loop_interview_db
     ports:
       - 5432:5432
+    volumes: 
+      - ./.scripts/dbs/sql/build_and_seed.sql:/docker-entrypoint-initdb.d/build_and_seed.sql
 
   neo4j:
     image: neo4j:4.0
