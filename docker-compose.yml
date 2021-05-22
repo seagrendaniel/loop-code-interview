@@ -26,7 +26,7 @@ services:
       - 7474:7474
       - 7687:7687
     volumes:
-      - ./dbs/neo4j/import:/import
+      - ./.scripts/dbs/neo4j/import:/import
     cpus: 0.75
     restart: always
 
