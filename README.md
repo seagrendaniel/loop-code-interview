@@ -3,7 +3,7 @@
 ### DB & ETL portion
 - First start up postgres docker container
 - Write a script (language of your choosing ) to import the SQL into the postgres db
-  > [Hint] To execute a command in the container use `docker exec {dockerContainerId}`
+  > [Hint] To execute a command in the container use `docker exec -i {dockerContainerId}`
 - Write a script to export to a CSV from the postgres database too `.scripts/neo4j/import`
   > [Hint] Don't miss, this folder is mounted into Neo4j when it loads up
 - Start Neo4j docker container
@@ -20,6 +20,8 @@
     MATCH (User:u)-[:owns]->(Vehicle:v) return u, v
   ```
   <br/>
+
+  Throughout this repository are intentionally broken pieces too, look carefully at structures, path names, file locations, and how they might not fit perfectly within the instructions. 
 
 ### Server Portion
 - Start Server
